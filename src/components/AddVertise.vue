@@ -61,7 +61,6 @@ export default{
     border-radius: 10px;
     border: 1px ;
 }
-
 .container1 {
     width: 50%;
     height: 100%;
@@ -70,10 +69,8 @@ export default{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
 }
-
 .heading {
     font-family: serif;
     font-size: 24px;
@@ -81,29 +78,20 @@ export default{
     line-height: 32px;
     color: #000;
 }
-
 ._btn {
     margin-top: 20px;
 }
-
 .image {
     width: 250px;
     height: 250px;
     margin-top: 48px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 img {
-    background: none;
-    border: none;
-    outline: none;
-    box-shadow: none;
     width: 100%;
     height: 100%;
-
 }
 
 </style>
