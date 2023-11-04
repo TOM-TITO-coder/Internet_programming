@@ -38,14 +38,13 @@ import MyButton from './components/MyButton.vue';
 import Cart from './components/Cart.vue';
 import AddVertise from './components/AddVertise.vue';
 
-  export default {
+export default {
     name: 'App',
     components: {
       MyButton,
       Cart,
       AddVertise,
     },
-
     data(){
       return{
         promotion: [
@@ -148,16 +147,10 @@ import AddVertise from './components/AddVertise.vue';
   margin-top: 20px;
 }
 
-.container_promotion {
-  margin-left: 10px;
-}
-
 .cart_promotion{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-.card_conatainer {
-  margin-left: 10px;
-}
 </style>

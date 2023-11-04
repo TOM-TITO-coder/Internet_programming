@@ -52,7 +52,7 @@ export default{
 <style scoped>
 
 .container {
-    width: 512px;
+    width: 500px;
     height: 300px;
     display: flex;
     flex-direction: row;
