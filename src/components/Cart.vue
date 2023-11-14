@@ -1,6 +1,6 @@
 <template>
-    <div class="container" :style="{backgroundColor: bgColor}">
-        <div class="image">
+    <div class="container_cart" :style="{backgroundColor: bgColor}">
+        <div class="image_cart">
             <img :src=Img alt="">
         </div>
         <div class="title">
@@ -40,8 +40,8 @@ export default {
 
 <style scoped>
 
-.container {
-    width: 136px;
+.container_cart {
+    width: 137px;
     height: 185px;
     border: 1px;
     display: flex;
@@ -51,7 +51,7 @@ export default {
     border-radius: 10px;
 }
 
-.image {
+.image_cart {
     width: 120px;
     height: 120px;
     border-radius: 10px;

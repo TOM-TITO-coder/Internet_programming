@@ -1,6 +1,9 @@
 <template>
-    <div class="container" :style="{backgroundColor: bgColor}">
-        <div class="container1">
+    <div class="container_add" :style="{backgroundColor: bgColor}">
+        <div class="wrap_add" >
+            <!-- <div class="container1">
+                
+            </div> -->
             <div class="heading">
                 {{ heanding }}
             </div>
@@ -8,10 +11,11 @@
                 <MyButton  :text="textBtn" :Bgcolor="colorBtn"/>
             </div>
         </div>
-        <div class="image">
+
+        <div class="image_add">
             <img :src=Img alt="">
         </div>
-
+        
     </div>
 </template>
 
@@ -51,42 +55,54 @@ export default{
 
 <style scoped>
 
-.container {
-    width: 500px;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    border: 1px ;
-}
-.container1 {
-    width: 50%;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap');
+
+.wrap_add{
+    width: 60%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 10px;
+    margin-left: 10px;
+}
+.container_add {
+    width: 480px;
+    height: 300px;
+    border: 1px;
+    display: flex;
+    border-radius: 10px;
+}
+/* .container1 {
+    width: 200px;
+    height:150px ;
     margin-left: 48px;
     margin-top: 77px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-}
+} */
 .heading {
-    font-family: serif;
+    font-family: Quicksand;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 32px;
     color: #000;
 }
 ._btn {
     margin-top: 20px;
 }
-.image {
-    width: 250px;
-    height: 250px;
-    margin-top: 48px;
+.image_add {
+    width: 40%;
+    height: 60%;
+    margin-top: 120px;
     justify-content: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 img {
