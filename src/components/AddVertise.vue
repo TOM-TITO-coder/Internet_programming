@@ -13,7 +13,7 @@
         </div>
 
         <div class="image_add">
-            <img :src=Img alt="">
+            <img :src="Img" alt="" />
         </div>
         
     </div>
@@ -43,8 +43,8 @@ export default{
         },
         Img: {
             type: String,
-            default: 'https://picsum.photos/200/300', 
-        },
+            default: 'https://picsum.photos/200/300',
+        }
     },
     components: {
         MyButton,
