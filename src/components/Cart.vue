@@ -43,12 +43,20 @@ export default {
 .container_cart {
     width: 137px;
     height: 185px;
-    border: 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    border: 1px solid #BCE3C9;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+}
+
+.container_cart:hover {
+    border: 2px solid #3BB77E;
 }
 
 .image_cart {

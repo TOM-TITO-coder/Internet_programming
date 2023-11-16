@@ -70,9 +70,15 @@ export default{
 .container_add {
     width: 480px;
     height: 300px;
-    border: 1px;
+    border: 1px solid #BCE3C9;
     display: flex;
     border-radius: 10px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container_add:hover {
+    border: 2px solid #3BB77E;
 }
 /* .container1 {
     width: 200px;

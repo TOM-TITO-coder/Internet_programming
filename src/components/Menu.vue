@@ -1,18 +1,18 @@
 <template>
   <div class="container_menu">
     
-        <div class="right_component">
-            <p>{{ text_menu }}</p>
-        </div>
-        <div class="left_component">
-            <p><strong>All</strong></p>
-            <p>Milks&Dairies</p>
-            <p>Coffes & Teas</p>
-            <p>Pet Foods</p>
-            <p>Meats</p>
-            <p>Vegetables</p>
-            <p>Fruits</p>
-        </div>
+    <div class="right_component">
+        <p>{{ text_menu }}</p>
+    </div>
+    <div class="left_component">
+        <p><strong>All</strong></p>
+        <p>Milks&Dairies</p>
+        <p>Coffes & Teas</p>
+        <p>Pet Foods</p>
+        <p>Meats</p>
+        <p>Vegetables</p>
+        <p>Fruits</p>
+    </div>
     
   </div>
 </template>
@@ -33,14 +33,14 @@ export default {
 
 .container_menu {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 1450px;
 }
 
 .right_component {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -54,7 +54,7 @@ export default {
 .left_component {
     width: 50%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -69,6 +69,5 @@ export default {
 .left_component p:hover {
     color: rgba(208, 113, 113, 0.829);
 }
-
 
 </style>

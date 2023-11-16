@@ -18,7 +18,7 @@
                 </div>
             </div>
   
-            <div class="promotion_container">
+            <div class="promotion_page1">
                 <div v-for="item in promotions" :key="item.Img">
                     <AddVertise
                         :bgColor="item.bgColor"
@@ -33,7 +33,22 @@
             <div class="popular_product_menu">
                 <Menu text_menu="Popular Products"/>
             </div>
-            
+
+            <div class="product_page1 item">
+                <div v-for="item in products" :key="item.Img">
+                    <Product
+                        :tage_title="item.tag"
+                        :tage_color="item.tag_color"
+                        :Image_product="item.image"
+                        :category_product="item.category"
+                        :name_product="item.name"
+                        :rate_product="item.rate"
+                        :sell_price_product="item.sellPrice"
+                        :des_product="item.description"
+                        :discount_price="item.discountPrice"
+                    />
+                </div>
+            </div>
         </div>
       
     </div>
@@ -45,6 +60,8 @@
   import Cart from '../components/Cart.vue';
   import AddVertise from '../components/AddVertise.vue';
   import Menu from '../components/Menu.vue';
+  import Product from '../components/Product.vue';
+
   import { mapState } from 'pinia';
   import { useProductStore} from '../stores/product_store.js';
   
@@ -55,10 +72,12 @@
         Cart,
         AddVertise,
         Menu,
+        Product,
       },
       computed: {
         ...mapState(useProductStore, ["categories"]),
         ...mapState(useProductStore, ["promotions"]),
+        ...mapState(useProductStore, ["products"]),
       },
     };
   
@@ -69,12 +88,15 @@
 .container_page1 {
     width: 100%;
     height: auto;
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .wrap_page1 {
    
-    width: 100%;
+    width: 1500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,22 +106,34 @@
 .cart_page1{
     margin-top: 10px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: space-between;
-    gap: 9px;
+    gap: 8px;
 }
 
-.promotion_container{
+.promotion_page1{
     margin-top: 10px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    gap: 6px;
 }
    
 .popular_product_menu{
     margin-top: 10px;
+    
 }  
+
+.product_page1 {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+
+
 </style>
   
