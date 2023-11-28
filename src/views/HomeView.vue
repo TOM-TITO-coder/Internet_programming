@@ -66,7 +66,7 @@
   import { useProductStore} from '../stores/product_store.js';
   
   export default {
-      name: 'App',
+      name: 'HomeView',
       components: {
         MyButton,
         Cart,

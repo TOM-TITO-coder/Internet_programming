@@ -1,6 +1,6 @@
 <template>
-    <div class="app">
-        <router-view />
+    <div id="app">
+        <RouterView />
     </div>
 </template>
 
@@ -16,11 +16,5 @@ export default {
 </script>
 
 <style>
-.app {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 </style>
