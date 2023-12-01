@@ -23,7 +23,7 @@
 
 <script>
 export default {
-    name: 'ShowCase',
+    name: 'ShowCaseProduct',
     props: {
         title: {
             type: String,
@@ -41,7 +41,7 @@ export default {
 <style scoped>
 .container_showCase{
     display: flex;
-    width: 1584px;
+    width: 100%;
     height: 538px;
     flex-direction: row;
     align-items: center;

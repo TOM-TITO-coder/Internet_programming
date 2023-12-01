@@ -22,9 +22,7 @@ import fish from '@/assets/images/fish.png';
 import carbage from '@/assets/images/carbage.png';
 import berry from '@/assets/images/berry.png';
 import pork from '@/assets/images/pork.png';
-import mongoImg from '@/assets/images/mongo.png';
 import beer_gril from '@/assets/images/beef_gril.png';
-
 
 export const useProductStore = defineStore("product", {
     state: () => ({
@@ -131,7 +129,7 @@ export const useProductStore = defineStore("product", {
             {
                 id: 1,
                 tag: "-17%",
-                image: mongoImg,
+                image: new URL('../assets/images/mongo.png', import.meta.url),
                 category: "Hodo Foods",
                 name: "Seeds of Change Organic Quinoa, Brown, & Red Rice",
                 rate: 2,

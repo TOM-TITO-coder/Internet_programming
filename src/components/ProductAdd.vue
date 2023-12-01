@@ -38,7 +38,10 @@
             <button 
                 class="num_product" 
                 v-if="quantity === 0" 
-                @click="showInput = true; quantity = 1">Add +</button>
+                @click="showInput = true; quantity = 1"
+                >
+                Add +
+            </button>
             <button 
                 class="num_product" 
                 type="number" min="0" max="100"

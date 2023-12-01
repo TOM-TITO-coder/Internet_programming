@@ -68,7 +68,7 @@ export default{
     margin-left: 10px;
 }
 .container_add {
-    width: 480px;
+    width: 550px;
     height: 300px;
     border: 1px solid #BCE3C9;
     display: flex;

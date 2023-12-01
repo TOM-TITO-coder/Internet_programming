@@ -1,4 +1,5 @@
 <template>
+    
     <div class="container_cart" :style="{backgroundColor: bgColor}">
         <div class="image_cart">
             <img :src=Img alt="">
@@ -10,6 +11,7 @@
             {{ Item }}
         </div>
     </div>
+    
 </template>
 
 <script>
@@ -17,6 +19,10 @@
 export default {
     name: 'Cart',
     props: {
+        id: {
+            type: String,
+            default: '1',
+        },
         bgColor: {
             type: String,
             default: '#3BB77E',
@@ -34,6 +40,7 @@ export default {
             default: 'Item',
         },
     },
+
 }
 
 </script>

@@ -29,20 +29,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .container_menu {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 1450px;
-}
-
-.right_component {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .right_component p {
@@ -52,12 +45,11 @@ export default {
 }
 
 .left_component {
-    width: 50%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 30px;
 }
 
 .left_component p {
